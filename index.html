@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap CSS link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <title>Book Search</title>
+  </head>
+  <body>
+    <!-- ------------------search box section --------------->
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-12">
+          <h1 class="text-primary text-center m-4">
+            Search Your Favorite Book
+          </h1>
+          <div class="input-group mb-3 w-75 mx-auto">
+            <input
+              id="searchText"
+              type="text"
+              class="form-control p-2 fs-4 border border-3 border-primary btn-outline-light"
+              placeholder="Search Your Book Here"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              onclick="loadBook()"
+              class="btn btn-outline-secondary btn-primary text-white fw-bold"
+              type="button"
+              id="button-addon2"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- -------------Number of found Book section------------ -->
+
+      <section>
+        <div>
+          <h2 id="showFound" class="text-center text-primary"></h2>
+        </div>
+        <div class="row m-4" id="card_display"></div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
